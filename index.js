@@ -6,10 +6,9 @@ conexao.connect (erro => {
   if (erro) {
     console.log (erro);
   } else {
-    console.log ("Conectado com sucesso!");
-    
+    console.log ("Conectado com sucesso.");
     Tabelas.init (conexao);
     const app = customExpress ();
-    app.listen (3001, () => console.log ("Servidor rodando na porta 3001."));
+    app.listen (3001, () => console.log ("Servidor rodando na porta 3001.")); 
   }
 });
